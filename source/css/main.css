@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 14px;
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 7px;
   margin-bottom: 0.7rem;
   text-transform: uppercase; }
@@ -122,6 +122,8 @@ Layout
   text-align: right; }
 
 .content {
+  min-height: 600px;
+  min-height: 60rem;
   padding: 20px;
   padding: 2rem; }
 
