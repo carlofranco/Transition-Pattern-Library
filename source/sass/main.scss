@@ -1,0 +1,176 @@
+/*
+screen.scss
+Stylesheet for Nouveau Shopify theme prototype
+*/
+
+
+// SASS Libs ------------
+
+@import 'bourbon';
+@import 'rem/rem';
+
+
+// SASS Vars
+// -----------------------------*/
+
+// Colors
+
+$white: #fff;
+$light: #ECEDED;
+$medium: #D9DBDC;
+$dark: #808181;
+
+
+// Typeface
+
+$sans: "Proxima Nova", "helvetica neue", arial, sans-serif;
+
+
+/*
+Base
+--------------------------------*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+audio[controls], canvas, video {
+  display: inline-block;
+  *display:
+  inline; *zoom: 1;
+}
+
+::-moz-selection {
+  background: $medium;
+  color: $white;
+  text-shadow: none;
+}
+
+::selection {
+  background: $medium;
+  color: $white;
+  text-shadow: none;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;  
+}
+
+html {
+  @include rem(font-size, 14px);
+  vertical-align: baseline;
+}
+
+body {
+  color: $dark;
+  font-family: $sans;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  @include rem(margin-bottom, 10px);
+  text-transform: uppercase;
+}
+
+a, a:visited {
+  color: $dark;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+  color: $dark;
+  outline: 0;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+p {
+  margin: 14px 0;
+}
+
+ul, ol, dl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  @include rem(margin, 7px 0);
+}
+
+img {
+  border: 0;
+  display: block;
+  line-height: 0;
+  margin: 0;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  padding: 0;
+}
+
+figure {
+  @include rem(margin, 0 0 7px 0);
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/*
+Layout
+--------------------------------*/
+
+.container {
+  margin: 0 auto;
+  @include rem(max-width, 960px);
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+
+.main-header {
+  min-height: 60px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.content {
+}
+
+/*
+Header
+*/
+
+a.logotype {
+  color: $dark;
+  display: block;
+  @include rem (font-size, 16px);
+  font-weight: 700;
+  @include rem(line-height, 20px);
+  @include rem(margin,  0 0 20px 30px);
+}
+
+/*
+Adaptive
+--------------------------------*/
+

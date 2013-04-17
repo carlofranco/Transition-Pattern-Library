@@ -1,0 +1,131 @@
+/*
+screen.scss
+Stylesheet for Nouveau Shopify theme prototype
+*/
+/*
+Base
+--------------------------------*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+::-moz-selection {
+  background: #d9dbdc;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: #d9dbdc;
+  color: white;
+  text-shadow: none; }
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 14px;
+  font-size: 1.4rem;
+  vertical-align: baseline; }
+
+body {
+  color: #808181;
+  font-family: "Proxima Nova", "helvetica neue", arial, sans-serif;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  line-height: 1.3em;
+  margin: 0; }
+
+h1 {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  text-transform: uppercase; }
+
+a, a:visited {
+  color: #808181;
+  text-decoration: none; }
+
+a:hover, a:active, a:focus {
+  color: #808181;
+  outline: 0; }
+
+b, strong {
+  font-weight: 700; }
+
+p {
+  margin: 14px 0; }
+
+ul, ol, dl {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin: 7px 0;
+  margin: 0.7rem 0; }
+
+img {
+  border: 0;
+  display: block;
+  line-height: 0;
+  margin: 0;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  padding: 0; }
+
+figure {
+  margin: 0 0 7px 0;
+  margin: 0 0 0.7rem 0; }
+
+figcaption {
+  font-style: italic; }
+
+/*
+Layout
+--------------------------------*/
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  max-width: 96rem;
+  min-width: 320px;
+  position: relative;
+  width: 100%; }
+
+.main-header {
+  min-height: 60px;
+  padding-top: 20px;
+  width: 100%; }
+
+/*
+Header
+*/
+a.logotype {
+  color: #808181;
+  display: block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 20px;
+  line-height: 2rem;
+  margin: 0 0 20px 30px;
+  margin: 0 0 2rem 3rem; }
+
+/*
+Adaptive
+--------------------------------*/
