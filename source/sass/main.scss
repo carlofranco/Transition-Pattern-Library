@@ -114,12 +114,12 @@ b, strong {
 }
 
 p {
-  margin: 14px 0;
+  @include rem(margin, 14px 0);
 }
 
 ul, ol, dl {
   list-style: none;
-  margin: 0;
+  @include rem(margin, 0 0 14px 0);
   padding: 0;
 }
 
