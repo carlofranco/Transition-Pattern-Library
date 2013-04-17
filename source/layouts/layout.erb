@@ -10,6 +10,9 @@
     <title><%= data.page.title || "PXU TPL" %></title>
     
     <%= stylesheet_link_tag "main" %>
+    <% if current_page.data.css %>
+    <%= stylesheet_link_tag current_page.data.css %>
+    <% end %>
     <%= javascript_include_tag  "main" %>
   </head>
   
