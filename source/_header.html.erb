@@ -1,4 +1,6 @@
 <header class="main-header">
 <h1><a href="/">Transition Pattern Library</a></h1>
-<h2><%= data.page.title %></h2>
+<% if current_page.data.title != "Home" %>
+  <h2><a href="/">Home</a> / <% if current_page.parent.data.title != "Home" %><%= link_to current_page.parent.data.title, current_page.parent %> / <% end %><%= data.page.title %></h2>
+<% end %>
 </header>
