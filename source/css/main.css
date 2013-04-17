@@ -1,6 +1,6 @@
 /*
 screen.scss
-Stylesheet for Nouveau Shopify theme prototype
+Stylesheet for PXU TPL
 */
 /*
 Base
@@ -36,22 +36,24 @@ html, body {
   margin: 0; }
 
 html {
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 10px;
   vertical-align: baseline; }
 
 body {
   color: #808181;
   font-family: "Proxima Nova", "helvetica neue", arial, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5 {
+  color: #808181;
   font-weight: 700;
   line-height: 1.3em;
   margin: 0; }
 
 h1 {
-  font-size: 28px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
   margin-bottom: 1rem;
@@ -101,16 +103,22 @@ Layout
 --------------------------------*/
 .container {
   margin: 0 auto;
-  max-width: 960px;
-  max-width: 96rem;
+  max-width: 1000px;
+  max-width: 100rem;
   min-width: 320px;
   position: relative;
   width: 100%; }
 
 .main-header {
   min-height: 60px;
-  padding-top: 20px;
-  width: 100%; }
+  min-height: 6rem;
+  padding: 20px;
+  padding: 2rem;
+  text-align: right; }
+
+.content {
+  padding: 20px;
+  padding: 2rem; }
 
 /*
 Header

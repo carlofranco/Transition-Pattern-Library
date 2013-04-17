@@ -1,6 +1,6 @@
 /*
 screen.scss
-Stylesheet for Nouveau Shopify theme prototype
+Stylesheet for PXU TPL
 */
 
 
@@ -67,24 +67,26 @@ html, body {
 }
 
 html {
-  @include rem(font-size, 14px);
+  font-size: 10px;
   vertical-align: baseline;
 }
 
 body {
   color: $dark;
   font-family: $sans;
+  @include rem(font-size, 14px);
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5 {
+  color: $dark;
   font-weight: 700;
   line-height: 1.3em;
   margin: 0;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   @include rem(margin-bottom, 10px);
   text-transform: uppercase;
@@ -142,19 +144,20 @@ Layout
 
 .container {
   margin: 0 auto;
-  @include rem(max-width, 960px);
+  @include rem(max-width, 1000px);
   min-width: 320px;
   position: relative;
   width: 100%;
 }
 
 .main-header {
-  min-height: 60px;
-  padding-top: 20px;
-  width: 100%;
+  @include rem(min-height, 60px);
+  @include rem(padding, 20px);
+  text-align: right;
 }
 
 .content {
+  @include rem(padding, 20px);
 }
 
 /*
