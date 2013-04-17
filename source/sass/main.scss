@@ -19,6 +19,9 @@ $white: #fff;
 $light: #ECEDED;
 $medium: #D9DBDC;
 $dark: #808181;
+$darkest: #222;
+$text: #4e4e4e;
+$title: #ccc;
 
 
 // Typeface
@@ -80,16 +83,21 @@ body {
 
 h1, h2, h3, h4, h5 {
   color: $dark;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.3em;
   margin: 0;
 }
 
 h1 {
-  font-size: 14px;
+  @include rem(font-size, 14px);
+  font-weight: 800;
   letter-spacing: 0.1em;
   @include rem(margin-bottom, 10px);
   text-transform: uppercase;
+}
+
+h2 {
+  @include rem(font-size, 11px);
 }
 
 a, a:visited {
