@@ -164,7 +164,9 @@ Layout
 }
 
 .content {
+  @include rem(min-height, 600px);
   @include rem(padding, 20px);
+
 }
 
 /*
