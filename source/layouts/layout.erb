@@ -7,13 +7,17 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= data.page.title || "The Middleman" %></title>
+    <title><%= data.page.title || "PXU TPL" %></title>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "main" %>
+    <%= javascript_include_tag  "main" %>
   </head>
   
-  <body class="<%= page_classes %>">
-    <%= yield %>
+  <body>
+    <div class="container">
+      <%= partial "header" %>
+      <%= yield %>
+    </div><!-- container -->
+
   </body>
 </html>
