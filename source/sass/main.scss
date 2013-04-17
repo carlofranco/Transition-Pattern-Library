@@ -91,8 +91,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   @include rem(font-size, 14px);
   font-weight: 800;
-  letter-spacing: 0.1em;
-  @include rem(margin-bottom, 10px);
+  @include rem(margin-bottom, 7px);
   text-transform: uppercase;
 }
 
