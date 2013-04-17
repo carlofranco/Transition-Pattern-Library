@@ -3,59 +3,32 @@ screen.scss
 Stylesheet for PXU TPL
 Overlays
 */
-
-// This shit should be centralized and imported
-
-@import 'bourbon';
-@import 'rem/rem';
-
-
-$white: #fff;
-$light: #ECEDED;
-$medium: #D9DBDC;
-$dark: #808181;
-$darkest: #222;
-$text: #4e4e4e;
-$title: #ccc;
-
-
 /*
 Block containers
 --------------------------------*/
-
 .block-container {
   display: block;
   height: auto;
   text-align: centered;
-  width: 100%;
-}
+  width: 100%; }
 
 /*
 Blocks
 --------------------------------*/
-
 .block {
-  background-color: $medium;
+  background-color: #d9dbdc;
   display: block;
-  width: 50%;
-}
-
+  width: 50%; }
 
 /*
 Dimensions
 --------------------------------*/
-
 .tall {
-  height: 250px;
-}
+  height: 250px; }
 
 /*
 Example-specific styles
 --------------------------------*/
-
 /*
 Fade-in
 */
-
-
-
