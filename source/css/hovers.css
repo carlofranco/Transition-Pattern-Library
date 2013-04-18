@@ -9,22 +9,62 @@ Block containers
 .block-container {
   display: block;
   height: auto;
-  text-align: centered;
+  text-align: center;
   width: 100%; }
 
 /*
-Blocks
+Shapes
 --------------------------------*/
 .block {
-  background-color: #d9dbdc;
-  display: block;
+  display: inline-block;
+  position: relative;
   width: 50%; }
+
+.circle {
+  border-radius: 50px;
+  border-radius: 5rem;
+  height: 100px;
+  height: 10rem;
+  margin: 0 auto;
+  width: 100px;
+  width: 10rem; }
+
+/*
+Overlays
+--------------------------------*/
+.overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+/*
+Colours
+--------------------------------*/
+.light {
+  background-color: #eceded; }
+
+.medium {
+  background-color: #d9dbdc; }
+
+.white {
+  background-color: white; }
 
 /*
 Dimensions
 --------------------------------*/
+.title {
+  height: 35px;
+  height: 3.5rem; }
+
+.super-tall {
+  height: 400px;
+  height: 40rem; }
+
 .tall {
-  height: 250px; }
+  height: 250px;
+  height: 25rem; }
 
 /*
 Example-specific styles
@@ -32,3 +72,23 @@ Example-specific styles
 /*
 Fade-in
 */
+.fade-in .overlay {
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  -ms-transition: background-color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out; }
+
+.fade-in .overlay:hover {
+  background-color: #808181; }
+
+.fade-in .overlay .circle {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
+
+.fade-in .overlay:hover .circle {
+  opacity: 1; }

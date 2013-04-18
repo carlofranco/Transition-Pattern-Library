@@ -26,18 +26,53 @@ Block containers
 .block-container {
   display: block;
   height: auto;
-  text-align: centered;
+  text-align: center;
   width: 100%;
 }
 
 /*
-Blocks
+Shapes
 --------------------------------*/
 
 .block {
-  background-color: $medium;
-  display: block;
+  display: inline-block;
+  position: relative;
   width: 50%;
+}
+
+.circle {
+  @include rem(border-radius, 50px);
+  @include rem(height, 100px);
+  margin: 0 auto;
+  @include rem(width, 100px);
+}
+
+/*
+Overlays
+--------------------------------*/
+
+.overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*
+Colours
+--------------------------------*/
+
+.light {
+  background-color: $light;
+}
+
+.medium {
+  background-color: $medium;
+}
+
+.white {
+  background-color: $white;
 }
 
 
@@ -45,8 +80,16 @@ Blocks
 Dimensions
 --------------------------------*/
 
+.title {
+  @include rem(height, 35px);
+}
+
+.super-tall {
+  @include rem(height, 400px);
+}
+
 .tall {
-  height: 250px;
+  @include rem(height, 250px);
 }
 
 /*
@@ -56,6 +99,27 @@ Example-specific styles
 /*
 Fade-in
 */
+
+
+.fade-in .overlay {
+  @include transition(background-color 0.1s ease-in-out);
+}
+
+.fade-in .overlay:hover {
+  background-color: $dark;
+}
+
+.fade-in .overlay .circle {
+  opacity: 0;
+  @include transition(opacity 0.2s ease-in-out);
+}
+
+.fade-in .overlay:hover .circle {
+  opacity: 1
+}
+
+
+
 
 
 
