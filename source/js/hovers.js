@@ -5,6 +5,12 @@ $(document).ready(function(){
 
   // Fade-in
 
-  $('.fade-in .overlay').transition({background: dark});
+  setTimeout(function(){
+    var callback = function(){ alert('Transition complete') };
+    $('.fade-in .overlay')
+      .transition({background: dark})
+      .delay(1000)
+      .transition({background: title}, {complete: callback});
+  }, 2000);
 
 });

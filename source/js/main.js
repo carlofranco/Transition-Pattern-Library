@@ -10,14 +10,27 @@ var defaults = {
       text = '#4e4e4e',
       title = '#ccc';
 
-$(document).ready(function(){
+$.fn.emulateTransitionEnd = function(duration) {
+  var called = false, $el = this;
+  $(this).one('webkitTransitionEnd', function() { called = true; });
+  var callback = function() { if (!called) $($el).trigger('webkitTransitionEnd'); };
+  setTimeout(callback, duration);
+};
 
-  $.fn.transition = function (properties, options) {
-    options = $.extend({}, defaults, options);
-    properties.webkitTransition = 'all ' + options.duration + 'ms ' + options.easing;
-    $(this).css(properties);
+$.fn.transition = function (properties, options) {
+  var $el = $(this);
+  options = $.extend({}, defaults, options);
+  properties.webkitTransition = 'all ' + options.duration + 'ms ' + options.easing;
+  var callback = function(){
+    $el.dequeue();
+    if (options.complete) options.complete.apply($el);
   };
-
   
-
-});
+  $el.queue(function(){
+    $el.one('webkitTransitionEnd', callback);
+    $el.emulateTransitionEnd();
+    $el.css(properties);
+  });
+      
+  return this;
+};
