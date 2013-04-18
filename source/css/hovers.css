@@ -15,8 +15,11 @@ Block containers
 /*
 Shapes
 --------------------------------*/
+.block, .circle {
+  display: block;
+  margin: 0 auto 20px auto; }
+
 .block {
-  display: inline-block;
   position: relative;
   width: 50%; }
 
@@ -25,7 +28,6 @@ Shapes
   border-radius: 5rem;
   height: 100px;
   height: 10rem;
-  margin: 0 auto;
   width: 100px;
   width: 10rem; }
 
@@ -42,14 +44,26 @@ Overlays
 /*
 Colours
 --------------------------------*/
+.white {
+  background-color: white; }
+
 .light {
   background-color: #eceded; }
+
+.medium-light {
+  background-color: #ccc; }
 
 .medium {
   background-color: #d9dbdc; }
 
-.white {
-  background-color: white; }
+.dark {
+  background-color: #808181; }
+
+.darkest {
+  background-color: #222; }
+
+.text {
+  background-color: #4e4e4e; }
 
 /*
 Dimensions
@@ -72,5 +86,13 @@ Example-specific styles
 /*
 Fade-in
 */
-.fade-in .overlay .circle {
+.fade-in .overlay .circle, .fade-in .overlay .title {
   opacity: 0; }
+
+.fade-in .circle {
+  margin-top: 90px;
+  margin-top: 9rem; }
+
+.fade-in .title {
+  margin-top: 40px;
+  margin-top: 4rem; }
