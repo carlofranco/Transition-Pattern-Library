@@ -1,12 +1,9 @@
 ---
 title: Hovers
 ---
-
+<% if current_page.data.title %>
+  <h2><%= current_page.data.title%></h2>
+<% end %>
 <div class="list-group">
-  <h2>Hover Transitions</h2>
-  <ul>
-    <li><a href="/hovers/fade-in.html">Fade-in</a></li>
-    <li><a href="/hovers/two-step-fade-in.html">Two step fade-in</a></li>
-  </ul>
   <%= list_pages current_page %>
 </div><!-- list-group -->

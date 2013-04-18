@@ -188,8 +188,13 @@ Layout
 Lists
 */
 
-.list-group {
-  @include rem(margin-bottom, 40px);
+.home .list-group  {
+  @include rem(font-size, 16px);
+}
+
+.list-group ul li li {
+  @include rem(font-size, 14px);
+  @include rem(margin-left, 20px);
 }
 
 /*
@@ -207,8 +212,6 @@ Header
 
 .breadcrumbs {
   @include rem(font-size, 11px);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 /*
