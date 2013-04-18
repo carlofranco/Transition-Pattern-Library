@@ -16,7 +16,7 @@
     <%= javascript_include_tag  "main" %>
   </head>
   
-  <body>
+  <body class="<% if current_page.data.body_class %><%= current_page.data.body_class %><%end %>">
     <div class="container">
       <%= partial "header" %>
       <div class="content">
