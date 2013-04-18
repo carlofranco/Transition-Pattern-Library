@@ -75,38 +75,54 @@ html {
 }
 
 body {
-  color: $dark;
+  color: $text;
   font-family: $sans;
   @include rem(font-size, 14px);
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5 {
-  color: $dark;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3em;
   margin: 0;
 }
 
 h1 {
-  @include rem(font-size, 14px);
-  font-weight: 700;
+  @include rem(font-size, 16px);
   @include rem(margin-bottom, 7px);
   text-transform: uppercase;
 }
 
 h2 {
-  @include rem(font-size, 11px);
+  @include rem(font-size, 18px);
+  @include rem(margin-bottom, 14px);
+}
+
+h3 {
+  @include rem(font-size, 14px);
+  @include rem(margin-bottom, 7px);
 }
 
 a, a:visited {
-  color: $dark;
+  border-bottom: 1px solid $medium;
+  color: $text;
+  font-weight: 700;
   text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
-  color: $dark;
+  border-bottom: 1px solid $dark;
+  color: $darkest;
   outline: 0;
+}
+
+h2 a, h2 a:visited, h3 a, h3 a:visited {
+  color: $text;
+  border-bottom: none;
+}
+
+h2 a:hover, h3 a:hover {
+  border-bottom: none;
 }
 
 b, strong {
@@ -166,20 +182,33 @@ Layout
 .content {
   @include rem(min-height, 600px);
   @include rem(padding, 20px);
+}
 
+/*
+Lists
+*/
+
+.list-group {
+  @include rem(margin-bottom, 40px);
+}
+
+/*
+Demo
+*/
+
+.demo h3 {
+  color: $dark;
+  text-align: center;
 }
 
 /*
 Header
 */
 
-a.logotype {
-  color: $dark;
-  display: block;
-  @include rem (font-size, 16px);
-  font-weight: 700;
-  @include rem(line-height, 20px);
-  @include rem(margin,  0 0 20px 30px);
+.breadcrumbs {
+  @include rem(font-size, 11px);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 /*
