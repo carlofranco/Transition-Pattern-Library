@@ -131,6 +131,22 @@ Fade-in
   @include rem(margin-top, 40px);
 }
 
+/*
+Two step fade-in
+*/
+
+.two-step-fade-in .overlay .circle, .two-step-fade-in .overlay .title {
+  opacity: 0;
+}
+
+.two-step-fade-in .circle {
+  @include rem(margin-top, 90px);
+}
+
+.two-step-fade-in .title {
+  @include rem(margin-top, 40px);
+}
+
 
 
 

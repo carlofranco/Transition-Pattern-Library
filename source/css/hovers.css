@@ -96,3 +96,17 @@ Fade-in
 .fade-in .title {
   margin-top: 40px;
   margin-top: 4rem; }
+
+/*
+Two step fade-in
+*/
+.two-step-fade-in .overlay .circle, .two-step-fade-in .overlay .title {
+  opacity: 0; }
+
+.two-step-fade-in .circle {
+  margin-top: 90px;
+  margin-top: 9rem; }
+
+.two-step-fade-in .title {
+  margin-top: 40px;
+  margin-top: 4rem; }
