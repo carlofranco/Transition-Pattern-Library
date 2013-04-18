@@ -100,22 +100,8 @@ Example-specific styles
 Fade-in
 */
 
-
-.fade-in .overlay {
-  @include transition(background-color 0.1s ease-in-out);
-}
-
-.fade-in .overlay:hover {
-  background-color: $dark;
-}
-
 .fade-in .overlay .circle {
   opacity: 0;
-  @include transition(opacity 0.2s ease-in-out);
-}
-
-.fade-in .overlay:hover .circle {
-  opacity: 1
 }
 
 

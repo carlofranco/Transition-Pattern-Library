@@ -72,23 +72,5 @@ Example-specific styles
 /*
 Fade-in
 */
-.fade-in .overlay {
-  -webkit-transition: background-color 0.1s ease-in-out;
-  -moz-transition: background-color 0.1s ease-in-out;
-  -ms-transition: background-color 0.1s ease-in-out;
-  -o-transition: background-color 0.1s ease-in-out;
-  transition: background-color 0.1s ease-in-out; }
-
-.fade-in .overlay:hover {
-  background-color: #808181; }
-
 .fade-in .overlay .circle {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out; }
-
-.fade-in .overlay:hover .circle {
-  opacity: 1; }
+  opacity: 0; }
