@@ -4,11 +4,11 @@ var defaults = {
       },
       white = '#fff',
       light = '#eceded',
+      mediumlight = '#ccc';
       medium = '#d9dbdc',
       dark = '#808181',
       darkest = '#222',
       text = '#4e4e4e',
-      title = '#ccc';
 
 $.fn.emulateTransitionEnd = function(duration) {
   var called = false, $el = this;
