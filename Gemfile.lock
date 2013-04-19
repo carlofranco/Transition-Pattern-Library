@@ -103,5 +103,5 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 3.0.12)
-  middleman-gh-pages
+  middleman-gh-pages (~> 0.0.2)
   middleman-listpages (~> 0.0.2)
