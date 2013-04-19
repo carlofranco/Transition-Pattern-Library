@@ -1,0 +1,113 @@
+/*
+screen.scss
+Stylesheet for PXU TPL
+Overlays
+*/
+/*
+Block containers
+--------------------------------*/
+
+.block-container {
+  display: block;
+  height: auto;
+  text-align: center;
+  width: 100%; }
+
+/*
+Shapes
+--------------------------------*/
+.block, .circle {
+  display: block;
+  margin: 0 auto 20px auto; }
+
+.block {
+  position: relative;
+  width: 50%; }
+
+.circle {
+  border-radius: 50px;
+  border-radius: 5rem;
+  height: 100px;
+  height: 10rem;
+  width: 100px;
+  width: 10rem; }
+
+/*
+Overlays
+--------------------------------*/
+.overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+/*
+Colours
+--------------------------------*/
+.white {
+  background-color: white; }
+
+.light {
+  background-color: #eceded; }
+
+.medium-light {
+  background-color: #ccc; }
+
+.medium {
+  background-color: #d9dbdc; }
+
+.dark {
+  background-color: #808181; }
+
+.darkest {
+  background-color: #222; }
+
+.text {
+  background-color: #4e4e4e; }
+
+/*
+Dimensions
+--------------------------------*/
+.title {
+  height: 35px;
+  height: 3.5rem; }
+
+.super-tall {
+  height: 400px;
+  height: 40rem; }
+
+.tall {
+  height: 250px;
+  height: 25rem; }
+
+/*
+Example-specific styles
+--------------------------------*/
+/*
+Fade-in
+*/
+.fade-in .overlay .circle, .fade-in .overlay .title {
+  opacity: 0; }
+
+.fade-in .circle {
+  margin-top: 90px;
+  margin-top: 9rem; }
+
+.fade-in .title {
+  margin-top: 40px;
+  margin-top: 4rem; }
+
+/*
+Two step fade-in
+*/
+.two-step-fade-in .overlay .circle, .two-step-fade-in .overlay .title {
+  opacity: 0; }
+
+.two-step-fade-in .circle {
+  margin-top: 90px;
+  margin-top: 9rem; }
+
+.two-step-fade-in .title {
+  margin-top: 40px;
+  margin-top: 4rem; }
