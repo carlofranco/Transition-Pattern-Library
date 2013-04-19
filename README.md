@@ -23,4 +23,4 @@ Now go to 0.0.0.0:4567
 
 ## Recommended usage
 
-Create folders and files for demo categories and the demos themselves. Create stylesheets either on a per-category basis, or per-demo basis (same goes for javascript). Use the CSS to specific initial styles for your demo objects, and create your transitions using the jQuery, as demonstrated.
+Create folders and files for demo categories and the demos themselves. Create stylesheets either on a per-category basis, or per-demo basis (same goes for javascript), and specify these in the YAML frontmatter of your demo pages. Use the CSS to specific initial styles for your demo objects, and create your transitions using the jQuery, as demonstrated.
