@@ -1,6 +1,6 @@
 # Transition Pattern Library
 
-A middleman-based site for showcasing programmatic CSS-transition animations. It is a useful framework for organizing demo animations from multiple contributors with different coding styles, because demo files can specify their own css and js files. The approach to demoing transitions follows that described by Alex Maccaw in [http://blog.alexmaccaw.com/css-transitions](http://blog.alexmaccaw.com/css-transitions), which gives us CSS transition callbacks and chaining.
+A middleman-based site for showcasing programmatic CSS-transition animations. It is a useful framework for organizing demo animations from multiple contributors with different coding styles, because demo files can specify their own css and js files. The approach to demoing transitions follows that described by [Alex Maccaw](https://github.com/maccman) in [http://blog.alexmaccaw.com/css-transitions](http://blog.alexmaccaw.com/css-transitions), which gives us CSS transition callbacks and chaining.
 
 ## Features
 
