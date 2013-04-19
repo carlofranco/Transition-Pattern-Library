@@ -24,3 +24,11 @@ Now go to 0.0.0.0:4567
 ## Recommended usage
 
 Create folders and files for demo categories and the demos themselves. Create stylesheets either on a per-category basis, or per-demo basis (same goes for javascript), and specify these in the YAML frontmatter of your demo pages. Use the CSS to specific initial styles for your demo objects, and create your transitions using the jQuery, as demonstrated.
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
