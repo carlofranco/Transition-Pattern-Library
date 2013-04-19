@@ -20,8 +20,8 @@
       <header class="main-header">
         <h1>Transition Pattern Library</h1>
         <div class="breadcrumbs">
-          <% if current_page.data.title != "Home" %>
-            <a href="/">Home</a> / <% if current_page.parent.data.title != "Home" %><%= link_to current_page.parent.data.title, current_page.parent %> / <% end %><%= data.page.title %>
+          <% if current_page.parent %>
+            <a href="/">Home</a> / <% if current_page.parent %><%= link_to current_page.parent.data.title, current_page.parent %> / <% end %><%= data.page.title %>
           <% end %>
         </div><!-- breadcrumbs -->
       </header>
