@@ -55,6 +55,11 @@ set :images_dir, 'img'
 
 activate :listpages
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  # deploy.after_build = true
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
