@@ -13,6 +13,7 @@ A middleman-based site for showcasing programmatic CSS-transition animations. It
 * jQuery 1.8.2
 * Middleman 3.012
 * middleman-listpages 0.0.2
+* middleman-gh-pages
 
 ## Installation
 
